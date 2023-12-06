@@ -24,7 +24,7 @@ RUN go env -w GOPROXY="http://goproxy.cn,http://goproxy.io,direct"; \
 # Refer to https://github.com/GoogleContainerTools/distroless for more details
 
 
-FROM alpine:3.17.2
+FROM alpine:3.18.5
 
 # add our user and group first to make sure their IDs get assigned consistently, regardless of whatever dependencies get added
 RUN addgroup -S -g 1000 redis && adduser -S -G redis -u 999 redis
